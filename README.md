@@ -15,7 +15,7 @@ This repository contains the backend logic powered by [Strapi](https://strapi.io
 
 ## Getting Started
 
-1. Clone this repository ```git clone https://github.com/DeimanteDav/Quiz-strapi.git```.
+1. Clone this repository.
 1. Install dependencies using ```npm install```.
 1. Run the app locally with ```npm run develop```.
 1. Connect to the [Quiz Frontend](https://github.com/DeimanteDav/Quiz-react).
