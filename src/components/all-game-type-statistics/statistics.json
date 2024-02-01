@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_all_game_type_statistics_statistics",
+  "info": {
+    "displayName": "statistics",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "standard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.standard"
+    },
+    "timed": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.timed"
+    },
+    "speedGame": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.speed-game"
+    },
+    "totalGames": {
+      "type": "integer"
+    },
+    "totalPassed": {
+      "type": "integer"
+    },
+    "totalFailed": {
+      "type": "integer"
+    }
+  }
+}

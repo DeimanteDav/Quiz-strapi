@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generated_quizzes",
+  "info": {
+    "singularName": "generated-quiz",
+    "pluralName": "generated-quizzes",
+    "displayName": "Generated Quiz"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quiz.quiz",
+      "inversedBy": "generatedQuizzes"
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::question.question",
+      "inversedBy": "generatedQuizzes"
+    },
+    "playedGames": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::played-game.played-game",
+      "mappedBy": "generatedQuiz"
+    }
+  }
+}

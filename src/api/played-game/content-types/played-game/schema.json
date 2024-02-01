@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "played_games",
+  "info": {
+    "singularName": "played-game",
+    "pluralName": "played-games",
+    "displayName": "Played game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playerAnswers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.player-answers"
+    },
+    "correctAnswers": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "playedGames"
+    },
+    "passed": {
+      "type": "boolean",
+      "required": true
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz.quiz"
+    },
+    "hintsUsed": {
+      "type": "integer"
+    },
+    "gameType": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::game-type.game-type",
+      "inversedBy": "playedGames"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "coinsReceived": {
+      "type": "integer"
+    },
+    "difficulty": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::difficulty.difficulty",
+      "inversedBy": "playedGames"
+    },
+    "quizStatistic": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.timed"
+    },
+    "generatedQuiz": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::generated-quiz.generated-quiz",
+      "inversedBy": "playedGames"
+    },
+    "passedPercentage": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "questions_pages",
+  "info": {
+    "singularName": "questions-page",
+    "pluralName": "questions-pages",
+    "displayName": "Questions page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "recommend": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "questionInput": {
+      "type": "string"
+    },
+    "answerInput": {
+      "type": "string"
+    }
+  }
+}

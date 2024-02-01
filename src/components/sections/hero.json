@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "subheader": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "basic-components.link"
+    }
+  }
+}

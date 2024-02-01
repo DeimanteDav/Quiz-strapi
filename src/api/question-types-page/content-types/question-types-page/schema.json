@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "question_types_pages",
+  "info": {
+    "singularName": "question-types-page",
+    "pluralName": "question-types-pages",
+    "displayName": "Question types page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

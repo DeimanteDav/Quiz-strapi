@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "power_ups",
+  "info": {
+    "singularName": "power-up",
+    "pluralName": "power-ups",
+    "displayName": "Power up",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hints": {
+      "displayName": "hintsAmount",
+      "type": "component",
+      "repeatable": false,
+      "component": "power-ups.hints-amount"
+    },
+    "fiftyFifty": {
+      "displayName": "50/50",
+      "type": "component",
+      "repeatable": false,
+      "component": "power-ups.50-50"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "powerUp"
+    }
+  }
+}

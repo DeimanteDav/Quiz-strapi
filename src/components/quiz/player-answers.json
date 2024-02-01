@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_quiz_player_answers",
+  "info": {
+    "displayName": "PlayerAnswers",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question.question"
+    },
+    "answers": {
+      "displayName": "answerr",
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-components.answerr"
+    }
+  }
+}

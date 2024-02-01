@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_friend_friends",
+  "info": {
+    "displayName": "friend"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "accepted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

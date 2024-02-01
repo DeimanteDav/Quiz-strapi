@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_games_statistics",
+  "info": {
+    "singularName": "user-games-statistic",
+    "pluralName": "user-games-statistics",
+    "displayName": "UserGamesStatistic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "userGamesStatistic"
+    },
+    "totalGames": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "integer"
+    },
+    "totalPassed": {
+      "type": "integer"
+    },
+    "totalFailed": {
+      "type": "integer"
+    },
+    "hintsUsed": {
+      "type": "integer"
+    },
+    "timed": {
+      "displayName": "timed",
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.timed"
+    },
+    "speedGame": {
+      "displayName": "speedGame",
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.speed-game"
+    },
+    "standard": {
+      "displayName": "standard",
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.standard"
+    }
+  }
+}

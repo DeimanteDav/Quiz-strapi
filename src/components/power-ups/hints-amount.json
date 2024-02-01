@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_power_ups_hints_amounts",
+  "info": {
+    "displayName": "hintsAmount",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

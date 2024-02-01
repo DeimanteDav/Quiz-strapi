@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_game_best_games",
+  "info": {
+    "displayName": "best_game"
+  },
+  "options": {},
+  "attributes": {
+    "quiz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz.quiz"
+    },
+    "score": {
+      "type": "integer"
+    }
+  }
+}

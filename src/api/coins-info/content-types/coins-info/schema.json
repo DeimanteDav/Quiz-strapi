@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "coins_infos",
+  "info": {
+    "singularName": "coins-info",
+    "pluralName": "coins-infos",
+    "displayName": "Coins Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "quiz_results",
+  "info": {
+    "singularName": "quiz-result",
+    "pluralName": "quiz-results",
+    "displayName": "Quiz result"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "totalQuestions": {
+      "type": "string"
+    },
+    "correctAnswers": {
+      "type": "string"
+    },
+    "yourScore": {
+      "type": "string"
+    }
+  }
+}

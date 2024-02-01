@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hints_amounts",
+  "info": {
+    "singularName": "hints-amount",
+    "pluralName": "hints-amounts",
+    "displayName": "Hints amount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hints": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "hintsAmount"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommended_questions",
+  "info": {
+    "singularName": "recommended-question",
+    "pluralName": "recommended-questions",
+    "displayName": "RecommendedQuestion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

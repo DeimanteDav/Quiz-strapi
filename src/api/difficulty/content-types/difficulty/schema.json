@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "difficulties",
+  "info": {
+    "singularName": "difficulty",
+    "pluralName": "difficulties",
+    "displayName": "Difficulty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::question.question",
+      "mappedBy": "difficulty"
+    },
+    "playedGames": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::played-game.played-game",
+      "mappedBy": "difficulty"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "difficulty"
+    }
+  }
+}

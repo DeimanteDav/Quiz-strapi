@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_game_type_timeds",
+  "info": {
+    "displayName": "timed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "games": {
+      "type": "integer"
+    },
+    "totalTime": {
+      "type": "integer"
+    },
+    "averageTime": {
+      "type": "integer"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "averageScore": {
+      "type": "integer"
+    }
+  }
+}

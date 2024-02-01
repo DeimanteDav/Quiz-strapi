@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "groups"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "creator": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "groupsCreated"
+    },
+    "groupMembers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group-member.group-member",
+      "mappedBy": "group"
+    },
+    "groupActivities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group-activity.group-activity",
+      "mappedBy": "group"
+    }
+  }
+}

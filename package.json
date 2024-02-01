@@ -1,0 +1,32 @@
+{
+  "name": "strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "export": "npm run strapi export -- --no-encrypt --file data-export && git add data-export.tar.gz && git commit -m \"data-export\" && git push",
+    "import": "git pull && npm run strapi import -- -f data-export.tar.gz"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.12.6",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/plugin-i18n": "4.12.5",
+    "better-sqlite3": "8.5.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "e122c478-35cd-436a-954f-5e9f7a56abb7"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

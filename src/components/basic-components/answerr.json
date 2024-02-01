@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_basic_components_answerrs",
+  "info": {
+    "displayName": "answerr",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string"
+    }
+  }
+}

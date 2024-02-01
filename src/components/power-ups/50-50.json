@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_power_ups_50_50s",
+  "info": {
+    "displayName": "50/50"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

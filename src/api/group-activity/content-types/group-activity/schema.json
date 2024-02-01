@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "group_activities",
+  "info": {
+    "singularName": "group-activity",
+    "pluralName": "group-activities",
+    "displayName": "groupActivity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
+      "inversedBy": "groupActivities"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "groupActivities"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "group created",
+        "new user",
+        "declined invitation",
+        "user left",
+        "user removed"
+      ]
+    }
+  }
+}

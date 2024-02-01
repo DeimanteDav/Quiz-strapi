@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_basic_components_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "areaLabel": {
+      "type": "string"
+    }
+  }
+}

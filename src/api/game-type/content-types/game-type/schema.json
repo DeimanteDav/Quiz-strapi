@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_types",
+  "info": {
+    "singularName": "game-type",
+    "pluralName": "game-types",
+    "displayName": "Game type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "playedGames": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::played-game.played-game",
+      "mappedBy": "gameType"
+    },
+    "locked": {
+      "type": "boolean",
+      "default": false
+    },
+    "unlockedGames": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::unlocked-game.unlocked-game",
+      "mappedBy": "gameType"
+    }
+  }
+}

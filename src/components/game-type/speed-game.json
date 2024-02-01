@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_game_type_speed_games",
+  "info": {
+    "displayName": "speedGame",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "score": {
+      "type": "integer"
+    },
+    "games": {
+      "type": "integer"
+    },
+    "averageScore": {
+      "type": "integer"
+    }
+  }
+}

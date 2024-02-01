@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_game_type_standards",
+  "info": {
+    "displayName": "standard"
+  },
+  "options": {},
+  "attributes": {
+    "games": {
+      "type": "integer"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "averageScore": {
+      "type": "integer"
+    }
+  }
+}

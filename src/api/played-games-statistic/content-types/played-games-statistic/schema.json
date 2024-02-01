@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "played_games_statistics",
+  "info": {
+    "singularName": "played-games-statistic",
+    "pluralName": "played-games-statistics",
+    "displayName": "PlayedGamesStatistic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalGames": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "biginteger"
+    },
+    "totalPassed": {
+      "type": "integer"
+    },
+    "totalFailed": {
+      "type": "integer"
+    },
+    "hintsUsed": {
+      "type": "integer"
+    },
+    "timed": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.timed"
+    },
+    "speedGame": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.speed-game"
+    },
+    "standard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "game-type.standard"
+    }
+  }
+}
